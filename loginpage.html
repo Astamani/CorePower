@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            font-family: 'Ubuntu', sans-serif;
+            box-sizing: border-box;
+
+        }
+
+        .outer {
+            border: 3px solid rgb(255, 255, 255);
+            display: block;
+            margin: auto auto;
+            width: 500px;
+            height: 350px;
+            border-radius: 1rem;
+
+        }
+
+        .container h2 {
+            text-align: center;
+            margin-bottom: 24px;
+        }
+
+        .btn {
+            background-color: black;
+            color: white;
+
+            padding: 10px 20px;
+            display: block;
+            margin: 50px auto;
+            border-radius: 1rem;
+            padding: 5px 68px;
+            border: 3px solid red;
+            /* position: absolute; */
+        }
+
+        .btn:hover {
+            background-color: rgba(148, 148, 148, 0.671);
+            color: rgb(255, 0, 0);
+        }
+
+
+        .container {
+            padding: 0px 20px;
+            margin: 10px;
+        }
+
+
+        /* .con {
+            border: 2px solid white;
+        } */
+        /* .outer h2{
+            position: relative;
+        } */
+
+
+        .label {
+            display: block;
+            text-align: center;
+        }
+
+        label {
+            margin: 20px;
+        }
+
+        #user {
+            display: block;
+            margin: auto;
+
+        }
+
+        input::placeholder {
+            width: 100px;
+        }
+
+        body {
+            background-color: black;
+            color: white;
+            display: block;
+            margin: 200px auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="outer">
+        <form action="Logindata.php">
+            <div class="container">
+                <h2>Login</h2>
+                <div class="label">
+                    <!-- Here"label" tag is used to label a name of user using it improves the user accesibility 
+        using   label tag  "for" attribute we assign the lable for any input tag by entering "id" of other input  -->
+                    <label for="user">Username</label><br>
+                    <!-- "input text" is used for only take input in text from user -->
+                    <input type="text" placeholder="Username" id="user"><br>
+                    <label for="pass">Password</label><br>
+                    <input type="text" placeholder="Password" id="pass">
+
+                </div>
+                <div><button class="btn">Login</button></div>
+            </div>
+        </form>
+    </div>
+
+
+
+
+</body>
+
+</html>

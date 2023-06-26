@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Note- 
+    1)While inspecting navbar only consider the parent as the refference of position not the element which is present inside the parent
+    2)While making this project I have gained the knowledge about the button properties chrome default setting.  -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness club</title>
+    <link rel="stylesheet" href="style.css/">
+    <link rel="stylesheet" href="script.js/">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="loginpage.html"> -->
+    <style>
+        * {
+            font-family: 'Ubuntu', sans-serif;
+            box-sizing: border-box;
+            /* To hide the  overflow of text. */
+
+            color: white;
+        }
+
+        .navbar ul li {
+            display: inline-block;
+            padding: 15px 30px;
+            /* display: inline-block; */
+        }
+
+        ul {
+            overflow: auto;
+            margin: 0px;
+            padding: 0%;
+            text-align: center;
+            display: block;
+        }
+
+        /* By setting the div.nav we can directly point the div in below code we are reducing the width of the div
+        Important Note :- 1)By setting width of div and box-sizing:boreder-box; we can make our design reasponsive  */
+        div.navbar {
+            width: 43%;
+        }
+
+        header {
+            padding: 0%;
+        }
+
+        .navbar {
+            display: block;
+            margin: 10px auto;
+            width: 900px;
+        }
+
+        .nav li a:hover {
+            cursor: pointer;
+            text-decoration: underline;
+            color: red
+        }
+
+        .navbar ul li a {
+            text-decoration: none;
+            color: rgb(246, 86, 86);
+            font-size: 20px;
+
+        }
+
+        .logo {
+            /* Here we are setting the position of the logo absolute becasuse if we don't do that then div of the logo is aquiring the space so the nav bar is not able to get it's  properly position in website to avoid this first we make the div as inline block by using the display property and then position according to our requirement we can arrange them  */
+            color: rgb(255, 111, 111);
+            display: inline-block;
+            position: absolute;
+            left: 20px;
+            display: inline-block;
+            /* Here we are setting the padding -1 because when we set the padding -1  */
+            padding: -1px 30px;
+
+        }
+
+        .name {
+            display: block;
+            margin: auto;
+            cursor: pointer;
+        }
+
+        .logo1 {
+            /* Here we are setting the logo to the center because we want the name of clube and the logo above it and it should be in a center  */
+            display: block;
+            margin: auto;
+            width: 50px;
+            padding: 0px;
+        }
+
+        li {
+            /* To avoid the styling of the lines  */
+            list-style: none;
+        }
+
+        .logo img {
+            margin: 0px;
+            padding: 0px;
+            filter: invert(100%);
+        }
+
+        .logo img,
+        div {
+            display: block;
+            margin: auto;
+            color: rgb(255, 90, 90);
+        }
+
+        .head {
+            border: 3px solid rgb(246, 152, 115);
+            border-radius: 10px;
+            background-color: rgba(0, 0, 0, 0.914);
+
+        }
+
+        body {
+            background-image: url('https://images.unsplash.com/photo-1571902943202-507ec2618e8f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=775&q=80');
+            background-repeat: no-repeat;
+            background-size: 100% 1000px;
+            background-image: url(Gymback.avif);
+            background-repeat: no-repeat;
+            background-size: 100% 1000px;
+
+
+        }
+
+        .container {
+            color: white;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: auto auto;
+            gap: 5px;
+            grid-auto-rows: minmax(100px, auto);
+            box-sizing: border-box;
+        }
+
+        .container div {
+            color: white;
+        }
+
+
+
+        .first {
+            width: 500px;
+            border: 3px solid white;
+            padding: 10px;
+            border-radius: 1rem;
+            height: 600px;
+        }
+
+        .second {
+            width: 500px;
+            border: 3px solid white;
+            padding: 10px;
+            border-radius: 1rem;
+            height: 600px;
+        }
+
+        .second img {
+            width: 100px;
+            height: 96px;
+        }
+
+        .second div {
+            margin: 10px;
+        }
+
+        .first>div {
+            margin: 10px;
+        }
+
+        .first img {
+            width: 100px;
+            height: 111px;
+        }
+
+        h1 {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="head">
+
+        <div class="logo">
+            <img src="https://img.freepik.com/free-vector/hard-athletic-fitness-club-gym-vintage-emblem-bodybuilder-arm-with-barbell_74855-11247.jpg?size=626&ext=jpg&ga=GA1.1.1214019341.1686168641&semt=ais"
+                alt="error" class="logo1">
+            <div>CorePower</div>
+        </div>
+        <div class="navbar">
+            <ul class="nav">
+                <li><a href="#" target="_blank">About</a></li>
+                <li><a href="#" target="_blank">Trainers</a></li>
+                <li><a href="#" target="_blank">Membership</a></li>
+                <li><a href="#" target="_blank">Testimonials</a></li>
+            </ul>
+        </div>
+
+
+    </header>
+    <h2>Mastering Chest Push-ups for a Strong Upper Body</h2>
+    <div class="container">
+        <div class="first">
+
+            <h2> Benefits of Chest Push-ups:</h2>
+            <div class="img">
+                <img src="push-up.png" alt="internet error">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjrNe0PFj2DYIF143VWOGZ0Cth23xJBMKAorHLaJmgDKiqgvIp732n0WekV5BOhn1k30M&usqp=CAU"
+                    alt="internet error">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ85sIZy5M6cw5VCDzBTaqYE8jPGj1ukEyO8Q&usqp=CAU"
+                    alt="internet error">
+
+            </div>
+
+            <div> <span>1&rpar;</span> Functional Fitness: Push-ups mimic everyday movements like pushing doors, lifting
+                objects, or pushing
+                oneself off the ground. By strengthening the muscles involved in these actions, chest push-ups improve
+                overall functional fitness. </div>
+            <div><span>2&rpar;</span> Body Strength: Chest push-ups primarily target the pectoralis major muscle, which
+                is responsible for
+                the majority of chest muscle development. They also engage the deltoids (shoulders), triceps (back of
+                the
+                arms), and core uscles, leading to a well-rounded upper body workout.</div>
+            <div> <span>3&rpar;</span> Convenience and Accessibility: With no equipment required, chest push-ups can be
+                performed anytime,
+                anywhere, making them an ideal exercise for those who prefer to work out at home or while traveling.
+            </div>
+            <div><span>4&rpar;</span> Core Activation: Maintaining a rigid core during push-ups is essential for
+                stability and proper form.
+                Consequently, chest push-ups can help strengthen the abdominal and lower back muscles. </div>
+
+        </div>
+        <div class="second">
+
+            <h2> Benefits of Chest Push-ups:</h2>
+            <div class="img">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrCjzXTTw96veZSIcqnhQOGR6fNJlWeOKCC4uaxKRWlRochZh8mN7cKogxh3TtjzDb974&usqp=CAU"
+                    alt="internet error">
+                <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0Sl-DWD0N-r4UZNWQW0_cvHxdyHsSR5UZJKfzqlcbyaFahOaRnD9IkFoKiBv9IYKnKh8&usqp=CAU">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6biKDbin__2iaapT29tYzvvF5axTLFTkBswEcafPX2wCGoF0_gLNUK4VAkjznJ1duY74&usqp=CAU"
+                    alt="internet error">
+            </div>
+
+            <div> <span>1&rpar;</span> Increased Strength:
+                Biceps workouts, such as curls and variations of curls, specifically target the biceps brachii muscle,
+                leading to increased strength and muscular endurance in this area. </div>
+            <div><span>2&rpar;</span>Enhanced Upper Body Functionality: Well-developed biceps provide functional
+                benefits by improving your ability to perform everyday tasks that require upper body strength. Whether
+                it's lifting groceries, carrying heavy bags, or even performing physical work. </div>
+            <div> <span>3&rpar;</span>Balanced Upper Body: Building biceps strength is essential for maintaining
+                muscular balance in the upper body. It helps counteract the strength developed in the triceps, the
+                opposing muscle group on the back of the upper arm. </div>
+            <div><span>4&rpar;</span>Improved Grip Strength: Strong biceps contribute to better grip strength, which is
+                crucial for various activities and sports that require holding onto objects or maintaining a secure
+                grip, such as rock climbing, weightlifting, and racket sports. </div>
+        </div>
+        <h1>Join us today and get 50% off .</h1>
+
+    </div>
+
+</body>
+
+</html>
